@@ -1,0 +1,95 @@
+{
+  "fixture_id": "FIX-LSAT-REASONING-001",
+  "track_id": "OPT-66-LSAT",
+  "competency_id": "F2-COMP-66-LSAT-001",
+  "status": "READY_FOR_HUMAN_DRY_RUN",
+  "source_ids": [
+    "F2-66-002",
+    "F2-66-003",
+    "F2-66-004"
+  ],
+  "construct_boundary": "Original educational pilot for LSAT reasoning, evidence, and argument; not a credential, license, professional authorization, or high-impact decision.",
+  "task_contract": {
+    "purpose": "Run one bounded learner/reviewer task and inspect the evidence record.",
+    "role": "reasoning coach and evidence auditor",
+    "audience": "learner and qualified reviewer",
+    "format": "locator map, claim-reason-evidence-warrant table, alternative explanation, qualified conclusion.",
+    "time_limit": "60 minutes",
+    "allowed_materials": [
+      "this original synthetic fixture",
+      "learner notes",
+      "clearly identified public sources where applicable"
+    ],
+    "prohibited_actions": [
+      "invent source content",
+      "use confidential or real-person data",
+      "present the output as professional authorization"
+    ],
+    "decision_rights": "provide formative feedback and request review; no credentialing or final consequential decision",
+    "accessibility": "plain-language, screen-reader-compatible, and equivalent representations are permitted"
+  },
+  "stimulus": {
+    "type": "original_synthetic_bounded_packet_excerpt",
+    "notice": "The fixture is educational and non-secure.",
+    "excerpt": "> A city library considers extending evening hours. Supporters point to attendance at two pilot branches. Critics note that the pilots were located near a university and that the city did not measure whether the added hours served residents who lacked daytime access. The proposal therefore has evidence of demand, but not yet evidence that the proposed schedule reaches the residents named in its justification.\n\n**Learner task:** Segment the passage, identify the claim, reasons, missing evidence, and strongest alternative explanation. Write a two-sentence conclusion that states what the evidence supports and what it does not.\n\n**Required artifact:** locator map, claim-reason-evidence-warrant table, alternative explanation, qualified conclusion.\n\n**Nonmodel:** “The pilot proves residents need longer hours.”  \n**Feedback move:** Ask “Which words establish the population claim, and where is that population measured?”\n\n**Agent handoff:** Agent proposes a map and missing-evidence questions; learner verifies every entry against the passage.\n\n**Exit test:** A new passage with the same structure but different topic. Full credit requires evidence traceability and a limitation, not a..."
+  },
+  "learner_deliverables": [
+    "locator map, claim-reason-evidence-warrant table, alternative explanation, qualified conclusion.",
+    "uncertainty and limitation record",
+    "review/escalation request"
+  ],
+  "evidence_envelope": {
+    "required_fields": [
+      "task_contract",
+      "source_ids",
+      "evidence",
+      "uncertainty",
+      "review_status"
+    ],
+    "minimum_evidence": [
+      "source traceability",
+      "boundary statement",
+      "at least one limitation or unresolved question",
+      "human-review route"
+    ]
+  },
+  "machine_checks": [
+    "required fields are present",
+    "source IDs are nonempty",
+    "rights and safety flags are declared",
+    "review status is present"
+  ],
+  "human_review": [
+    "Human review owns high-stakes admissions, rights, and accessibility judgments.",
+    "substantive interpretation",
+    "accessibility and fairness",
+    "whether the output crosses the boundary"
+  ],
+  "stop_conditions": [
+    "real or confidential data are introduced",
+    "source or rights status is unclear",
+    "the task crosses into a live professional decision",
+    "the output is presented as a credential or sign-off"
+  ],
+  "evaluator": {
+    "dimensions": [
+      "traceability",
+      "construct evidence",
+      "uncertainty",
+      "boundary discipline",
+      "communication"
+    ],
+    "machine_decision": "structural checks only",
+    "human_decision": "qualified reviewer decides substantive adequacy and escalation",
+    "no_credentialing": true
+  },
+  "qa": {
+    "original_fixture": true,
+    "secure_content_reproduced": false,
+    "confidential_data": false,
+    "human_dry_run": "pending",
+    "known_risks": [
+      "Use original, public-domain, or permission-cleared passages only; never reproduce protected LSAT items or predict admissions."
+    ]
+  }
+}

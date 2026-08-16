@@ -1,0 +1,6 @@
+interface:
+  display_name: "LSAT Reasoning"
+  short_description: "Audit dense text and argument reasoning"
+  default_prompt: "Use $lsat-reasoning for a source-grounded, bounded LSAT reasoning, evidence, and argument workflow."
+policy:
+  allow_implicit_invocation: true

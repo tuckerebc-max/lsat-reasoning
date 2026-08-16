@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "package_id": "F2-SKILL-LSAT-REASONING-001",
+  "skill_name": "lsat-reasoning",
+  "track_id": "OPT-66-LSAT",
+  "competency_id": "F2-COMP-66-LSAT-001",
+  "architecture_id": "F2-ARCH-66-LSAT-001",
+  "status": "PRIVATE_V1_READY_FOR_DRY_RUN",
+  "source_ids": [
+    "F2-66-002",
+    "F2-66-003",
+    "F2-66-004"
+  ],
+  "source_handoff": "references/source-manifest.json",
+  "source_crosswalk": "references/source-crosswalk.md",
+  "source_lineage": "Fork 2 approved-track lineage is preserved in the in-package source manifest; no parent workspace is required at runtime.",
+  "human_review_required": true,
+  "credentialing": false,
+  "github_push_performed": false,
+  "open_gates": [
+    "current official source and rights verification",
+    "domain-qualified human review",
+    "human dry-run and reviewer calibration",
+    "accessibility review",
+    "fresh-context forward testing"
+  ],
+  "competency_name": "LSAT-derived dense-text and argument reasoning",
+  "files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references",
+    "scripts",
+    "tests",
+    ".github/workflows/validate.yml",
+    "release-manifest.json"
+  ]
+}

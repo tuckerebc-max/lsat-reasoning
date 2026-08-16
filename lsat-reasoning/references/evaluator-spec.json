@@ -1,0 +1,45 @@
+{
+  "evaluator_id": "OPT-66-LSAT-EVALUATOR-001",
+  "track_id": "OPT-66-LSAT",
+  "competency_id": "F2-COMP-66-LSAT-001",
+  "status": "EVALUATOR_DRAFT",
+  "primary_evidence": [
+    "text map",
+    "evidence ledger",
+    "reasoning map",
+    "alternative",
+    "conclusion / persuasive response."
+  ],
+  "dimensions": [
+    "task orientation and text segmentation;",
+    "evidence traceability and context;",
+    "reasoning relationship and warrant;",
+    "alternative / uncertainty handling;",
+    "conclusion and communication fit;",
+    "original-source and rights compliance."
+  ],
+  "critical_failures": [
+    "invented passage content",
+    "answer without evidence",
+    "protected LSAT material copied",
+    "or admission / legal-practice claim."
+  ],
+  "challenge_set_design": [
+    "original dense passage",
+    "ambiguous passage",
+    "attractive unsupported answer",
+    "conflicting passage pair",
+    "accessibility-variant passage."
+  ],
+  "improvement_loop": "diagnose the missing evidence or warrant → revise prompt to require a locator or alternative → rerun on a new passage → compare evidence completeness and reasoning quality.",
+  "quality_dimensions": [
+    "evidence traceability",
+    "reasoning validity",
+    "alternative handling",
+    "communication fit",
+    "uncertainty and boundary discipline"
+  ],
+  "human_review_required": true,
+  "no_credentialing": true,
+  "source_boundary": "Project evaluator design until source-specific validity and human-review gates close."
+}

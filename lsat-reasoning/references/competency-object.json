@@ -1,0 +1,249 @@
+{
+  "competency_id": "F2-COMP-66-LSAT-001",
+  "name": "LSAT-derived dense-text and argument reasoning",
+  "version": "0.1",
+  "domain": "6.6 graduate / professional reasoning",
+  "source_provenance": [
+    {
+      "source_id": "F2-66-002",
+      "layer": "SOURCE",
+      "role": "official LSAT construct description"
+    },
+    {
+      "source_id": "F2-66-003",
+      "layer": "SOURCE",
+      "role": "reading-comprehension task description"
+    },
+    {
+      "source_id": "F2-66-004",
+      "layer": "SOURCE",
+      "role": "task-analysis resource"
+    }
+  ],
+  "construct_definition": "Construct a recoverable understanding of dense material, trace reasoning relationships, test alternatives, and communicate a defensible conclusion. The assessment is evidence about this construct, not the construct itself.",
+  "claims": [
+    {
+      "layer": "SOURCE",
+      "statement": "Critical reading, analytical reasoning, logical reasoning, and persuasive writing are named LSAT skill domains.",
+      "source_ids": [
+        "F2-66-002"
+      ]
+    },
+    {
+      "layer": "CROSSWALK",
+      "statement": "A transferable textbook skill should preserve evidence, reasoning, alternatives, and communication rather than train only answer-key prediction.",
+      "source_ids": [
+        "F2-66-002",
+        "F2-66-003",
+        "F2-66-004"
+      ]
+    }
+  ],
+  "subskills": [
+    {
+      "id": "LSAT-S1",
+      "name": "orient and segment dense text"
+    },
+    {
+      "id": "LSAT-S2",
+      "name": "map claims, reasons, assumptions, and implications"
+    },
+    {
+      "id": "LSAT-S3",
+      "name": "test alternatives against evidence"
+    },
+    {
+      "id": "LSAT-S4",
+      "name": "state a warranted conclusion"
+    },
+    {
+      "id": "LSAT-S5",
+      "name": "write and audit a persuasive response"
+    }
+  ],
+  "evidence_requirements": [
+    {
+      "id": "LSAT-E1",
+      "evidence": "recoverable text map and locator ledger"
+    },
+    {
+      "id": "LSAT-E2",
+      "evidence": "reasoning map with warrant"
+    },
+    {
+      "id": "LSAT-E3",
+      "evidence": "alternative or uncertainty record"
+    },
+    {
+      "id": "LSAT-E4",
+      "evidence": "conclusion tied to evidence"
+    }
+  ],
+  "task_archetypes": [
+    {
+      "id": "LSAT-T1",
+      "task": "dense passage analysis"
+    },
+    {
+      "id": "LSAT-T2",
+      "task": "logical relationship map"
+    },
+    {
+      "id": "LSAT-T3",
+      "task": "argument repair and alternative test"
+    },
+    {
+      "id": "LSAT-T4",
+      "task": "persuasive response under constraints"
+    }
+  ],
+  "quality_dimensions": [
+    {
+      "id": "Q1",
+      "name": "evidence traceability"
+    },
+    {
+      "id": "Q2",
+      "name": "reasoning validity"
+    },
+    {
+      "id": "Q3",
+      "name": "alternative handling"
+    },
+    {
+      "id": "Q4",
+      "name": "communication fit"
+    },
+    {
+      "id": "Q5",
+      "name": "uncertainty and boundary discipline"
+    }
+  ],
+  "scoring_rules": [
+    {
+      "layer": "SOURCE",
+      "rule": "Preserve source-specific task and scoring evidence after technical harvest."
+    },
+    {
+      "layer": "EVALUATOR_DESIGN",
+      "rule": "A correct answer without an evidence and reasoning record is incomplete."
+    }
+  ],
+  "performance_levels": [
+    {
+      "level": "emerging",
+      "description": "locates some evidence but reasoning or alternatives are incomplete"
+    },
+    {
+      "level": "proficient",
+      "description": "maps evidence and reasoning and explains a supported conclusion"
+    },
+    {
+      "level": "transfer",
+      "description": "adapts the routine to unfamiliar dense text while exposing uncertainty"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM1",
+      "name": "unsupported conclusion"
+    },
+    {
+      "id": "FM2",
+      "name": "fragment without context"
+    },
+    {
+      "id": "FM3",
+      "name": "trick replaces reasoning"
+    },
+    {
+      "id": "FM4",
+      "name": "protected item copied"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "C1",
+      "constraint": "use original or rights-cleared passages"
+    },
+    {
+      "id": "C2",
+      "constraint": "do not make admissions or law-school-success claims"
+    }
+  ],
+  "risk_considerations": [
+    {
+      "risk": "construct underrepresentation",
+      "control": "include reading, reasoning, writing, and transfer tasks"
+    },
+    {
+      "risk": "accessibility",
+      "control": "provide alternate representations without changing target reasoning"
+    }
+  ],
+  "agent_instructions": {
+    "allowed_role": "scaffold and audit reasoning",
+    "must_do": [
+      "read supplied text",
+      "show locators",
+      "surface alternatives",
+      "state uncertainty"
+    ],
+    "must_not_do": [
+      "invent source content",
+      "claim admission prediction",
+      "copy protected items"
+    ],
+    "human_accountability": "human owns conclusion and learner feedback"
+  },
+  "evaluator_checks": [
+    {
+      "id": "EV1",
+      "check": "every major claim resolves to a passage locator"
+    },
+    {
+      "id": "EV2",
+      "check": "explicit content, inference, and judgment are distinct"
+    },
+    {
+      "id": "EV3",
+      "check": "an alternative or uncertainty is addressed"
+    },
+    {
+      "id": "EV4",
+      "check": "no protected content is reproduced"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TC1",
+      "fixture": "missing passage",
+      "expected": "NEEDS_SOURCE"
+    },
+    {
+      "id": "TC2",
+      "fixture": "ambiguous passage",
+      "expected": "multiple defensible interpretations"
+    },
+    {
+      "id": "TC3",
+      "fixture": "unsupported answer",
+      "expected": "evidence audit rejects it"
+    },
+    {
+      "id": "TC4",
+      "fixture": "new original passage",
+      "expected": "transfer with reasoning map"
+    }
+  ],
+  "related_competencies": [
+    "ANRI-DOM-CR-001",
+    "ANRI-DOM-WR-001",
+    "ANRI-DOM-ARG-001"
+  ],
+  "open_questions": [
+    {
+      "question": "Which current LSAC technical sources can support construct validation without reproducing protected material?"
+    }
+  ]
+}
